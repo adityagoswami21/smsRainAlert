@@ -10,4 +10,11 @@ params = {
 }
 
 response = requests.get(url="https://api.openweathermap.org/data/2.5/forecast", params=params)
-print(response.json())
+weather_data = response.json()
+will_rain = False
+weather_ids = []
+for ids in weather_data['list']:
+    weather_id = ids['weather'][0]['id']
+    # print(weather_id)
+    weather_ids.append(int(weather_id))
+print(weather_ids)
