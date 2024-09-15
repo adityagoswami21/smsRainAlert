@@ -8,7 +8,6 @@ params = {
     "appid": os.getenv('API_KEY'),
     "cnt": 4
 }
-
 response = requests.get(url="https://api.openweathermap.org/data/2.5/forecast", params=params)
 weather_data = response.json()
 will_rain = False
