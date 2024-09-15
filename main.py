@@ -3,8 +3,8 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 params = {
-    "lat": 25.192181,
-    "lon": 75.850838,
+    "lat": 23.344101,
+    "lon": 85.309563,
     "appid": os.getenv('API_KEY'),
     "cnt": 4
 }
